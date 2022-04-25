@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+    
+    <section id="login-bg">
+        <div class="connexion-section">
+            <form method="post" class="connexion-form">
+                <!-- {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+                
+                {% if app.user %}
+                <div class="mb-3">
+                    Vous êtes conecté en tant que {{ app.user.username }}, <a
+                    href="">Logout</a>
+                </div>
+            {% endif %} -->
+            <img src="img/logo-neoprocess.svg" alt="Logo Neo-process">
+            
+            <div class="connexion-mail">
+                <input type="email" value="" name="email" id="inputEmail" class="form-control"
+                autocomplete="email" placeholder="Votre identifiant" required autofocus>
+            </div>
+            <div class="connexion-password">
+                <input type="password" name="password" id="inputPassword" class="form-control"
+                autocomplete="current-password" placeholder="Votre mot de passe" required>
+                <span id="show-pass">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" viewBox="0 0 27 19">
+                        <g id="eye" transform="translate(-2 -5)">
+                            <path id="Tracé_166" data-name="Tracé 166" d="M17.167,13.083A4.083,4.083,0,1,1,13.083,9,4.083,4.083,0,0,1,17.167,13.083Z" transform="translate(2.417 1.417)" fill="#4a4a49"/>
+                            <path id="Tracé_167" data-name="Tracé 167" d="M28.857,13.893C25.944,8.035,20.769,5,15.5,5S5.056,8.035,2.143,13.893a1.364,1.364,0,0,0,0,1.214C5.056,20.965,10.231,24,15.5,24s10.444-3.035,13.357-8.893A1.363,1.363,0,0,0,28.857,13.893ZM15.5,21.286c-4.008,0-8.1-2.2-10.625-6.786C7.4,9.914,11.492,7.714,15.5,7.714s8.1,2.2,10.625,6.786C23.6,19.086,19.508,21.286,15.5,21.286Z" fill="#4a4a49"/>
+                        </g>
+                    </svg>
+                </span>
+                <span id="hide-pass">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+                </span>
+            </div>
+            <a href="#">Mot de passe oublié ?</a>
+            <button class="bouton-1" type="submit">
+                Se connecter
+            </button>
+        </form>
+    </div>
+</section>
+
+<script src="js/loginpass.js"></script>
+</body>
+</html>

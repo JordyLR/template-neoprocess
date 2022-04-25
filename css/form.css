@@ -1,0 +1,88 @@
+/* FORMULAIRE DE RECHERCHE */
+
+.form-search {
+    border: 1px solid var(--border);
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.form-search_button {
+    background-image: url(../img/rechercher.svg); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;           /* make this the size of your image */
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+    background-size: cover;
+}
+
+.form-search_input {
+    border: none;
+    width: 300px;
+}
+
+.form-search_input:focus-visible {
+    outline: none;
+}
+
+
+/* FORMULAIRE D'AJOUT/MODIFICATION */
+
+.content-form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-form .form .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.content-form .form .row-2 {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.input,
+select, 
+textarea {
+    border: 1px solid var(--color-text);
+    color: var(--item-form);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.chevron-ariane path {
+    fill: var(--color-text);
+}
+.content-form .form .row .label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#file-input {
+    display: none;
+}
+
+#file-box {
+    border: 1px solid var(--color-text);
+    color: var(--item-form);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
